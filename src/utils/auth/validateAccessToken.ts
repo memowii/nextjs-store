@@ -2,7 +2,7 @@ import { GraphQLClientSingleton } from "app/graphql"
 import { cookies } from "next/headers"
 import { customerName } from "app/graphql/queries/customerName"
 
-export const validateAcessToken = async () => {
+export const validateAccessToken = async () => {
   const cookieStore = cookies()
   const accessToken = cookieStore.get('accessToken')?.value
   const graphqlClient = GraphQLClientSingleton.getInstance().getClient()
