@@ -2,7 +2,7 @@
 import { GraphQLClientSingleton } from "app/graphql"
 import { createCartMutation } from "app/graphql/mutations/createCartMutation"
 import { createUserMutation } from "app/graphql/mutations/createUserMutation"
-import { createAccessToken } from "app/utils/auth/createAccessToken"
+import { createAccessToken } from "app/utils/auth/createAcessToken"
 import { validateAccessToken } from "app/utils/auth/validateAccessToken"
 import { cookies } from "next/headers"
 import { redirect } from "next/navigation"
