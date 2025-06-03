@@ -1,6 +1,8 @@
 import { getCustomerOrders } from "app/services/shopify/graphql/customer";
 import styles from './OrderInfo.module.sass'
 
+export const dynamic = 'force-dynamic'
+
 type OrderType = {
   name: string;
   orderNumber: number;
